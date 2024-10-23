@@ -9,5 +9,8 @@
 // const os = require('os');
 // console.log(os.cpus());
 const fs = require('fs');
-fs.writeFileSync('myfile.txt', 'Hello Programmers');
-fs.appendFileSync('myfile.txt', ' How are you?');
+// fs.writeFileSync('myfile.txt', 'Hello Programmers');
+// fs.appendFileSync('myfile.txt', ' How are you?');
+
+const data = fs.readFileSync('myfile.txt');
+console.log(data.toString());
