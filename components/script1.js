@@ -1,10 +1,9 @@
-var people ={
-    name: 'Sergi Lavrob',
+const EventEmitter = require('events');
+const emitter = new EventEmitter();
 
-}
-// const test => fun(){
-//  console.log('fun run!');
+//register Listener for bellRing event 
+emitter.on('bellRing', ()=>{
+    console.log('We need to go!');
+});
 
-// }
-
-module.export = people;
+emitter.emit('bellRing');
