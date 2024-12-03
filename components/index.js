@@ -15,9 +15,9 @@
 // console.log(data.toString());
 
 // const os = require('os');
-// console.log(os.freemem()); 
-const fs = require('fs');
- fs.readFile('myfile.txt', (err, data) =>{
-    console.log(data.toString());
+// console.log(os.freemem());
+const fs = require("fs");
+fs.readFile("myfile.txt", (err, data) => {
+  console.log(data.toString());
 });
 console.log("Hello Coder!");
